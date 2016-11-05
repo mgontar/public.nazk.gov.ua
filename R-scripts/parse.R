@@ -3,7 +3,7 @@ library(stringr)
 Sys.setlocale('LC_ALL', 'Ukrainian')
 
 regex <- "<article.*?pdf/(.*?)\".*?declaration/(.*?)\"> (.*?)<.*?<span>(.*?)<.*?</article>"
-files <-  list.files("data")
+files <-  list.files("scraped-data")
 allpersons <- data.frame(pdf=character(),
                          id=character(), 
                          name=character(), 
