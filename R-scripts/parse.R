@@ -29,11 +29,4 @@ for(file in files){
 
 allpersons <- unique(allpersons)
 
-write.csv(allpersons, file = "allpersons_03.11.16.csv")
-
-allpersons_old <- read.csv("allpersons_31.10.16.csv")
-allpersons_old <- allpersons_old[,-1]
-
-allpersons_new <- rbind(allpersons, allpersons_old)
-allpersons_new <- unique(allpersons_new)
-write.csv(allpersons_new, file = "allpersons.csv")
+write.csv(allpersons, file = "allpersons.csv")

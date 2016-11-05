@@ -1,5 +1,5 @@
 #Find missing id's
-files <-  list.files(paste(path.expand('~'), "..", "Downloads", "declarations", "json", sep = "/"))
+files <- list.files(paste(path.expand('~'), "..", "Downloads", "declarations", "json", sep = "/"))
 
 downloaded_ids <- gsub(".json", "", files)
 
