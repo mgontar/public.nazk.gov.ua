@@ -12,7 +12,7 @@ allpersons <- data.frame(pdf=character(),
 
 
 for(file in files){
-  mystring <- read_file(paste("data", file, sep = "//"))
+  mystring <- read_file(paste("scraped-data", file, sep = "//"))
   Encoding(mystring) <- "UTF-8"
   persons <-  str_match_all(mystring, regex)[[1]]
   persons <- persons[,-1]
